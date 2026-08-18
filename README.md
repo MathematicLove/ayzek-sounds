@@ -1,4 +1,4 @@
-# Ayzeks Sound
+# Ayzek Sounds
 
 Free MP3 player for iOS. 
 
