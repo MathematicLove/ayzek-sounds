@@ -1,0 +1,39 @@
+name: AyzekSounds
+options:
+  bundleIdPrefix: com.ayzek
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    SWIFT_VERSION: "5.0"
+targets:
+  AyzekSounds:
+    type: application
+    platform: iOS
+    sources:
+      - path: application/Sources
+      - path: application/Assets.xcassets
+    info:
+      path: application/Info.plist
+      properties:
+        CFBundleDisplayName: Ayzek Sounds
+        UIBackgroundModes:
+          - audio
+          - bluetooth-peripheral
+        UILaunchScreen: {}
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
+    settings:
+      base:
+        PRODUCT_NAME: AyzekSounds
+        PRODUCT_BUNDLE_IDENTIFIER: com.ayzek.sounds
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: NO
+        ENABLE_PREVIEWS: YES
